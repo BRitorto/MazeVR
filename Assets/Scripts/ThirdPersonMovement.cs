@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
-    public CharacterController controller;
     public Transform cam;
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -56,8 +55,6 @@ public class ThirdPersonMovement : MonoBehaviour
             }
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-            controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
-        controller.Move(velocity * Time.deltaTime);
     }
 }
