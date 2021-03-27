@@ -29,10 +29,7 @@ public class MazeGenerator : MonoBehaviour
     {
         Destroy(BorderParent);
         BorderParent = new GameObject("BorderParent");
-
-        MazeWidth = Random.Range(2,planeWidth+1);
-        MazeHeight = Random.Range(2, planeHeight+1);
-        UIIM.UpdateUI(MazeHeight,MazeWidth);
+        UIIM.UpdateUI(MazeHeight, MazeWidth);
         CreateTheGrid();
         CellGrid = RB.GetNewMaze(Grid);
 

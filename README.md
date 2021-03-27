@@ -1,2 +1,2 @@
-# Maze
-## Project for Virtual Reality course at ITBA
+# MazeVR
+Project for Virtual Reality course at ITBA
